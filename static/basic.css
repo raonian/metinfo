@@ -1,4 +1,21 @@
 
+.header .logo-box, .header .search-box {
+	height: 120px;
+	line-height: 120px;
+}
+.header .contact-index {
+	margin-left: 60px;
+	line-height: 1;
+}
+.header .search-index, .header .contact-index {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
 .search-box .input-group {
     width: 240px;
+}
+.search-box .input-group .input-group-addon {
+	cursor: pointer;
 }
