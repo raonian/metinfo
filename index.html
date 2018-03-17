@@ -24,14 +24,15 @@
     你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。</div>
 <![endif]-->
 <body>
+    <!-- 头部 -->
     <header class="header container">
         <div class="row">
-            <div class="logo-box col-lg-6">
+            <div class="logo-box col-lg-6 col-md-4 col-sm-6 col-xs-12">
                 <a href="https://show.metinfo.cn/m/mui010/387/" class="logo-img" title="title">
                     <img src="./static/logo.png" alt="title">
                 </a>
             </div>
-            <div class="search-box col-lg-6">
+            <div class="search-box col-lg-6 col-md-8 col-sm-6 col-xs-0">
                 <div class="search-index">
                     <form method="get" action="/" role="form">
                         <div class="input-group">
@@ -53,54 +54,109 @@
             </div>
         </div>
     </header>
+
+    <!-- 导航 -->
     <nav class="nav-box">
         <div class="container">
             <div class="row">
-                <ul class="nav nav-pills">
-                    <li class="active"><a href="#">网站首页</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            关于我们<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">公司简介</a></li>
-                            <li><a href="#">公司文化</a></li>
-                            <li><a href="#">在线留言</a></li>
-                            <li><a href="#">资格认证</a></li>
-                            <li><a href="#">联系我们</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            机械产品<span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">混凝土搅拌系列</a></li>
-                            <li><a href="#">稳定土搅拌系列</a></li>
-                            <li><a href="#">乳化分散搅拌系列</a></li>
-                            <li><a href="#">搅拌机配件</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">iOS</a></li>
-                    <li><a href="#">VB.Net</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Java <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Swing</a></li>
-                            <li><a href="#">jMeter</a></li>
-                            <li><a href="#">EJB</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">分离的链接</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">PHP</a></li>
-                </ul>
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid"> 
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">网站首页</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        关于我们<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">全部</a></li>
+                                        <li><a href="#">公司简介</a></li>
+                                        <li><a href="#">公司文化</a></li>
+                                        <li><a href="#">在线留言</a></li>
+                                        <li><a href="#">资格认证</a></li>
+                                        <li><a href="#">联系我们</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        机械产品<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">全部</a></li>
+                                        <li><a href="#">混凝土搅拌系列</a></li>
+                                        <li><a href="#">稳定土搅拌系列</a></li>
+                                        <li><a href="#">乳化分散搅拌系列</a></li>
+                                        <li><a href="#">搅拌机配件</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        行业优势<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">全部</a></li>
+                                        <li><a href="#">先进工艺</a></li>
+                                        <li><a href="#">质量优势</a></li>
+                                        <li><a href="#">优质管理</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        新闻动态<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">全部</a></li>
+                                        <li><a href="#">公司动态</a></li>
+                                        <li><a href="#">业界资讯</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">人力资源</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </nav>
 
+    <!-- 轮播 -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="./static/1.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="./static/2.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="./static/3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="carousel-control left" href="#myCarousel" 
+            data-slide="prev">&lsaquo;
+        </a>
+        <a class="carousel-control right" href="#myCarousel" 
+            data-slide="next">&rsaquo;
+        </a>
+    </div>
 
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
